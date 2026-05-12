@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <!-- Targets net10.0 because that's what's installed locally on devs/CI;
+         the SDK csproj targets net8.0 and is loaded as a library. -->
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>GoodSender.Runner</RootNamespace>
+    <AssemblyName>runner</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\src\GoodSender\GoodSender.csproj" />
+  </ItemGroup>
+
+  <!-- restsharp template: no Microsoft.Extensions.* DI infra needed. The SDK
+       pulls in RestSharp / Newtonsoft.Json / JsonSubTypes / Polly itself. -->
+
+</Project>

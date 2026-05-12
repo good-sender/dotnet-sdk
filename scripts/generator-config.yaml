@@ -1,0 +1,27 @@
+generatorName: csharp
+outputDir: .
+inputSpec: ../openapi/goodsender.yaml
+gitUserId: good-sender
+gitRepoId: dotnet-sdk
+packageVersion: 0.1.0
+# Workaround for an upstream generichost-template bug where the
+# JsonConverter.Write method for `oneOf` types serializes to `{}`
+# (empty body for ConsentEmailEntry). RestSharp + JsonSubTypes serializes
+# the oneOf correctly. Reconsider switching back to generichost once
+# upstream fixes the polymorphic serializer.
+library: restsharp
+additionalProperties:
+  httpUserAgent: goodsender-dotnet/0.1.0
+  packageName: GoodSender
+  packageTitle: GoodSender
+  packageVersion: 0.1.0
+  packageDescription: Official GoodSender API client for .NET
+  packageAuthors: GoodSender
+  packageCompany: GoodSender
+  packageCopyright: "Copyright (c) 2026 GoodSender"
+  packageProjectUrl: https://github.com/good-sender/dotnet-sdk
+  packageTags: "goodsender;email;api;sdk"
+  licenseId: MIT
+  licenseUrl: https://github.com/good-sender/dotnet-sdk/blob/main/LICENSE
+  targetFramework: net8.0
+  hideGenerationTimestamp: true
