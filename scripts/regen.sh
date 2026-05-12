@@ -43,6 +43,7 @@ tests/**
 scripts/**
 openapi/**
 openapitools.json
+api/openapi.yaml
 IGNORE_EOF
 
 # --- Optional clean step: wipe SDK output (preserves hand-curated files only)
