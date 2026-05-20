@@ -11,6 +11,7 @@ packageVersion: 0.1.0
 # upstream fixes the polymorphic serializer.
 library: restsharp
 additionalProperties:
+  packageGuid: "{B40668B6-9907-43AA-89C9-F8C8BB46902B}"
   httpUserAgent: goodsender-dotnet/0.1.0
   packageName: GoodSender
   packageTitle: GoodSender
