@@ -2,11 +2,6 @@
 
 Official client library for the GoodSender email API. Package: `GoodSender`
 
-## Installation
-
-```bash
-dotnet add package GoodSender
-```
 
 ## Quick start
 
@@ -71,7 +66,7 @@ Console.WriteLine($"emails={list.Emails?.Count ?? 0}");
 
 ## Documentation
 
-- API reference: <https://api.goodsender.com/docs>
+- API reference: <https://goodsender.com/docs>
 - OpenAPI spec: `openapi/goodsender.yaml` in this repo
 - Conformance tests: `tests/`
 
