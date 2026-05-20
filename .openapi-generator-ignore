@@ -5,3 +5,4 @@ tests/**
 scripts/**
 openapi/**
 openapitools.json
+api/openapi.yaml
