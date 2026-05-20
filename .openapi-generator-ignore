@@ -5,3 +5,6 @@ tests/**
 scripts/**
 openapi/**
 openapitools.json
+.github/**
+.regen-ignore
+api/openapi.yaml
